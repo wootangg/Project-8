@@ -1,0 +1,19 @@
+{
+  "name": "sql_library",
+  "version": "1.0.0",
+  "description": "This is a library book manager made with Express.js and Sequelize.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/www"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "pug": "^2.0.3",
+    "sequelize": "^5.1.0",
+    "sqlite3": "^4.0.6"
+  }
+}
