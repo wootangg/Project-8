@@ -2,21 +2,22 @@ extends layout
 
 block content
   h1= title
-  form
+  form(action=`/books/${id}/update`, method='post')
     p
       label(for="title") Title
       input(
         name="title"
         type="text"
         id="title"
+        value= book.title
       )
-    p= book.title
     p
       label(for="author") Author
       input(
         name="author"
         type="text"
         id="author"
+        value= book.author
       )
     p
       label(for="title") Genre
@@ -24,6 +25,7 @@ block content
         name="genre"
         type="text"
         id="genre"
+        value= book.genre
       )
     p
       label(for="title") Year
@@ -31,14 +33,21 @@ block content
         name="year"
         type="text"
         id="year"
+        value= book.year
       )
     p
       input(
         type="submit"
-        value="Create New Book"
+        value="Update Book"
       )
     p
       a(
         class="button"
         href="/books"
       ) Cancel
+  form(action=`/books/${id}/delete`, method='post')
+    p
+      input(
+        type="submit"
+        value="Delete Book"
+      )
