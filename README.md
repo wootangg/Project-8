@@ -2,5 +2,5 @@
 This is a library book manager made with Express.js and Sequelize.
 
 ## Installation
-Use npm to install dependencies. 
-npm install
+Use npm to install dependencies. 'npm install'
+To start local server. 'npm start'
