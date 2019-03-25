@@ -49,7 +49,7 @@ router.get('/:id', function(req, res, next) {
 });
 
 /* POST update individual book */
-router.post('/:id/update', function(req, res, next) {
+router.post('/:id', function(req, res, next) {
   Books.findByPk(req.params.id).then(function(book){
     if(book) {
       return book.update(req.body);

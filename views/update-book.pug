@@ -3,9 +3,9 @@ extends layout
 block content
   h1= title
 
-  include errors
+  include form-errors
 
-  form(action=`/books/${id}/update`, method='post')
+  form(action=`/books/${id}/`, method='post')
     p
       label(for="title") Title
       input(
